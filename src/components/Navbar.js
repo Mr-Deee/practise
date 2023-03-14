@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as Hamburger } from '../assets/icons/hamburger.svg'
+import { Spin as Hamburger } from 'hamburger-react'
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
