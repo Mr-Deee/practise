@@ -1,4 +1,7 @@
 body {
+
+
+
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -15,6 +18,58 @@ body {
   
   .welcomeText{
     font-size: 12cap;
-    padding: 30px;
+    padding: 60px;
 
   }
+  /* --------- */
+/* Home */
+/* --------- */
+
+.home-section {
+  position: relative;
+  padding-bottom: 199px;
+  padding-top: 100px;
+ 
+  background-color: whitesmoke;
+  background-image: url(../../assets/images/backdrop.jpg);
+  background-Size:"contain" ;
+  background-repeat: no-repeat;
+  background-position-x: right;
+
+}
+
+
+
+
+
+.homecard-section {
+  background-color: white;
+
+  /* background-color: #e7951a; */
+  position: relative !important;
+  padding-top: 80px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.homecard-card {
+  padding-top: 70px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.homecard-card-view {
+  box-shadow: 0 4px 5px 3px rgba(55, 0, 69, 0.459) !important;
+  color: rgb(4, 3, 3) !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.project-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(9, 9, 9, 0.561) !important;
+}

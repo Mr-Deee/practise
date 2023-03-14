@@ -11,22 +11,21 @@ import './style.css';
 function Home(){
     return(
 
+
 <>
+      <Container fluid className="home-section" id="home">
    <div className="welcome"><h1 className="welcomeText">Hello</h1></div>
 
 
 
-   <Container fluid className="project-section">
+   <Container fluid className="homecard-section">
       {/* <Particle /> */}
       <Container>
-        <h1 className="project-heading">
+        <h1 className="homecard-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+          <Col md={4} className="homecard-card">
             <HomeCard
               // imgPath={chatify}
               isBlog={false}
@@ -96,7 +95,7 @@ function Home(){
       </Container>
     </Container>
   
-   
+    </Container>
 
    </>
 
