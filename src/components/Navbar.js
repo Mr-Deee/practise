@@ -1,73 +1,49 @@
 import React, { useState } from "react";
+import { ReactComponent as Hamburger } from '../assets/icons/hamburger.svg'
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
-function NavBar() {
-  const [click, setClick] = useState(false);
+const NavBar = () => {
 
-  const handleClick = () => setClick(!click);
-  return (
-    <>
-      <nav className="navbar">
-        <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
-            Prac.
-            <i className="fas fa-code"></i>
-          </NavLink>
+    const [showNavbar, setShowNavbar] = useState(false)
 
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/about"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/blog"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Blog
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/contact"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Contact Us
-              </NavLink>
-            </li>
-          </ul>
-          <div className="nav-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
-          </div>
+    const handleShowNavbar = () => {
+      setShowNavbar(!showNavbar)
+    }
+     return (
+        <nav className="navbar">
+          <div className="container">
+            <div className="logo">
+              {/* <Brand /> */}
+            </div>
+
+            <div className="menu-icon" onClick={handleShowNavbar}>
+          <Hamburger />
         </div>
-      </nav>
-    </>
-  );
-}
+            <div className={`nav-elements  ${showNavbar && 'active'}`}>
+              <ul>
+                <li>
+                  <NavLink to="/">Home</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/blog">Blog</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/projects">Projects</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/about">About</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/contact">Contact</NavLink>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      )
+  }
+  
+  
 
 export default NavBar;

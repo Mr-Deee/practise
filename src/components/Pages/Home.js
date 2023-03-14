@@ -1,11 +1,14 @@
 import React from "react";
+import './style.css';
 
+
+ 
 
 function Home(){
     return(
 
 
-   <div><h1>Hello</h1></div>
+   <div className="welcome"><h1 className="welcomeText">Hello</h1></div>
 
 
 
