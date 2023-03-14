@@ -50,7 +50,7 @@ body {
 }
 
 .nav-elements ul a.active {
-  color: #e4dd89;
+  color: #f8b12c;
   font-weight: 500;
   position: relative;
 }
@@ -76,6 +76,7 @@ body {
   .menu-icon {
     display: block;
     cursor: pointer;
+    color: #f8b12c;
   
     
   }
