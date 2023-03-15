@@ -1,6 +1,5 @@
-body {
-
-
+html {
+   
 
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,20 +7,14 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
   }
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  .HelloText{
-    padding-top: 20px;
-    
-    font-size: 30px;
-    padding: 3px;
 
-  }
   .welcomeText{
     font-size: 10cap;
     padding: 0px;
@@ -31,14 +24,19 @@ body {
 /* Home */
 /* --------- */
 
-.welcome {
+.About {
+
+
+    background-image: url(../../../assets/images/backdrop.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+  
   
   padding-bottom: 19px;
   padding-left: 10px;
-  padding-top: 34px;
+  padding-top: 1008px;
  
   background-color: rgb(252, 252, 252);
-  background-image: url(../../assets/images/backdrop.png);
   background-Size: auto 100%;
   background-repeat: no-repeat;
   background-position-x: right;

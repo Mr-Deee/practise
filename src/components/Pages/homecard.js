@@ -6,7 +6,7 @@ function HomeCard(props){
 
   return(
 
-    <Card className="project-card-view">
+    <Card className="Home-card-view">
     <Card.Img variant="top" src={props.imgPath} alt="card-img" />
     <Card.Body>
       <Card.Title>{props.title}</Card.Title>
