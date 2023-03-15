@@ -9,7 +9,12 @@ function About() {
   return(
 <>
 
-    <div className="About"></div>
+   
+
+<div className="About-header"><p>About Us</p></div>
+
+
+
 
 </>
 

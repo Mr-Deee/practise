@@ -8,6 +8,8 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #f9f9f9;
+    background-image: url(../../../assets/images/backdrop.png);
+    background-repeat: no-repeat;
   }
   
   code {
@@ -24,61 +26,34 @@ html {
 /* Home */
 /* --------- */
 
-.About {
 
 
-    background-image: url(../../../assets/images/backdrop.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
+
+
+
+
+.About-header p {
+    font-size: 60px;
+    line-height: 1.5;
+    flex-direction: row;
+    position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+
+}
+
+
+
+
+
+@media (max-width: 308px) {
+    .About-header p {
+    
+      flex-wrap: wrap-reverse;
+    }
+  }
   
-  
-  padding-bottom: 19px;
-  padding-left: 10px;
-  padding-top: 1008px;
- 
-  background-color: rgb(252, 252, 252);
-  background-Size: auto 100%;
-  background-repeat: no-repeat;
-  background-position-x: right;
-
-}
-
-
-
-
-
-.homecard-section {
-  background-color: rgba(255, 255, 255, 0.973);
-
-  /* background-color: #e7951a; */
-
-  padding-top: 80px !important;
-  padding-bottom: 30px !important;
-
-}
-
-.homecard-card {
-  padding-top: 10px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-
-}
-
-.homecard-card-view {
-  box-shadow: 0 4px 5px 3px rgba(55, 0, 69, 0.459) !important;
-  color: rgb(4, 3, 3) !important;
-  background-color: transparent !important;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-.Home-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(9, 9, 9, 0.561) !important;
-}
-
 
 
 
