@@ -6,14 +6,15 @@ import {
 } from "react-router-dom";
 
 import './App.css';
+
 import Home from "./components/Pages/Home";
 import NavBar from "./components/Navbar";
 import About from "./components/Pages/About/about";
 
 
-
-
 function App(){
+
+  
 return(
 <>
 <Router>

@@ -17,13 +17,13 @@ function Home(){
 
    <div className="welcome">
     
-    <h1 className="welcomeText">Hello<h2 className="HelloText">welcome</h2></h1>
+    <h1 className="welcomeText">Kwame<h2 className="HelloText">Larbi-Agyei</h2></h1>
     </div>
 
     <div  className="homecard-section">
       {/* <Particle /> */}
       <Container>
-        <h1 className="homecard-heading">Random Shit </h1>
+        <h1 className="homecard-heading">Certifications</h1>
         {/* <h1 className="homecard-heading">
           My Recent <strong className="purple">Works </strong>
         </h1> */}
@@ -33,8 +33,7 @@ function Home(){
               // imgPath={chatify}
               isBlog={false}
               title=""
-              description="This App was Designed with the patients/customers in mind. Customers have the 
-              ability to check various departments for info , make enquiries , book appointments.This App is made from WITH Flutter & Dart"
+              description="....."
               ghLink="https://github.com/Mr-Deee/totalclinic"
             />
           </Col>
