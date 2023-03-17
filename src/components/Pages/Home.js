@@ -38,7 +38,7 @@ function Home(){
   <section>
    <div className="welcome">
     
-    <h1 className="welcomeText">Kwame<h2 className="HelloText">Larbi Amissah Agyei</h2></h1>
+    <h6 className="welcomeText">Kwame<h2 className="HelloText">Larbi Amissah Agyei</h2></h6>
     </div>
 
 

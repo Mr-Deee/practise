@@ -29,20 +29,44 @@
 
 }
 
+.HelloText{
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+
+  
+
+
+}
+
 
 @media(max-width: 800px) {
   .welcomeText{
     display: flex;
-    font-size: 10cap;
+    font-size: 30px;
     padding: 10px;
-    font-size: large;
+  
     
 
 
   }
+
+
   
 }
 
+
+@media(max-width: 800px) {
+  .HelloText{
+    display: fixed;
+    font-size: 20px;
+    padding: 10px;
+  
+    
+
+
+  }
+}
 
 
 .homecard-row{
