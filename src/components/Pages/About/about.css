@@ -13,8 +13,8 @@
 .aboutbio {
   justify-content: center;
   display: flex;
-  background-color: beige;
-  position: relative;
+  background-color: rgb(236, 236, 232);
+  position: block;
   left: auto;
   right: auto;
   align-items: center;
