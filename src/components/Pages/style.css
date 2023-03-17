@@ -20,6 +20,7 @@
   padding-bottom: 59px;
   padding-left: 10px;
   padding-top: 100px;
+  overflow: hidden;
  
   background-color: rgb(249, 251, 249);
   background-image: url(../../assets/images/backdrop.png);
@@ -59,6 +60,7 @@
 @media(max-width: 800px) {
   .HelloText{
     display: fixed;
+    overflow: hidden;
     font-size: 20px;
     padding: 10px;
   
