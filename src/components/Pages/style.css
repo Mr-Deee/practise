@@ -1,11 +1,4 @@
-*{
 
-  size: 20px;
-  
-
-}
- 
-  
   .welcomeText{
     font-size: 10cap;
     padding: 10px;
@@ -15,7 +8,10 @@
 /* Home */
 /* --------- */
 
+
+
 .welcome {
+
   
   padding-bottom: 59px;
   padding-left: 10px;
@@ -35,14 +31,12 @@
   font-size: 20px;
   padding: 10px;
 
-  
-
-
 }
 
 
 @media(max-width: 800px) {
   .welcomeText{
+
     display: flex;
     font-size: 30px;
     padding: 10px;
@@ -72,7 +66,17 @@
 
 
 .homecard-row{
-background-color: #fefdff;
+
+flex-direction: row;
+flex-wrap: wrap;
+margin-left: 0;
+margin-right: 0; 
+
+padding-top: 50px !important;
+padding-bottom: 50px !important;
+padding-left: 25px !important;
+padding-right: 25px !important;
+
 
 
 

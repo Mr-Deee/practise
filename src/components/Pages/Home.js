@@ -1,14 +1,12 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {  Row, Col } from "react-bootstrap";
 import './homecard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import HomeCard from "./homecard";
 import './style.css';
 import cyberarch from "../../assets/images/cyberarc.png";
 import identity from "../../assets/images/identity.png";
 import information from "../../assets/images/information.png";
-import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -18,7 +16,7 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { blue, red } from '@mui/material/colors';
+import { blue } from '@mui/material/colors';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Button from '@mui/material/Button';
 

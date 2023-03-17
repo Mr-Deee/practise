@@ -2,7 +2,6 @@ import React from "react";
 import "./about.css";
 import {Container, Row, Col } from "react-bootstrap";
 import Aboutcard from "./AboutCard"
-import cyberarch from "../../../assets/images/cyberarc.png";
 
 
 

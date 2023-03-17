@@ -1,0 +1,30 @@
+
+.Contactbox{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 44px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    left: auto;
+    right: auto;
+    text-align: center;
+
+
+}
+
+
+.Contactheader{
+  
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 44px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    left: auto;
+    right: auto;
+    text-align: center;
+
+  
+
+}
