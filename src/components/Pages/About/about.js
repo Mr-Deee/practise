@@ -11,9 +11,9 @@ function About() {
   return(
     <Container fluid className="about-section">
       
+      <div className="Abouthead">About</div>
       
-      
-      <Container>
+      <Container className="aboutbio">
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
