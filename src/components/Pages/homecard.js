@@ -1,12 +1,14 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { Row } from "react-bootstrap";
 
 function HomeCard(props){
 
   return(
 
     <Card className="Home-card-view">
+     
     <Card.Img variant="top" src={props.imgPath} alt="card-img" />
     <Card.Body>
       <Card.Title>{props.title}</Card.Title>
@@ -35,7 +37,6 @@ function HomeCard(props){
       )}
     </Card.Body>
   </Card>
-
 
 
   )
