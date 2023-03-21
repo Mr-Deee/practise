@@ -6,8 +6,8 @@ function AboutCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+        <blockquote className="blockquote">
+          <p style={{ textAlign:"center" }}>
             Hi Everyone, I am <span className="purple">Kwame Larbi Amissah Agyei </span>
             from <span className="purple"> Accra, Ghana.</span>
             <br />I am a graduate from....................

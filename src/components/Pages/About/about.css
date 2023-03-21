@@ -9,6 +9,36 @@
 
   /* flex-direction: column; */
 }
+.quote-card-view{
+align-content: center;
+content: center;
+justify-items: center;
+border-color: rgb(230, 180, 19);
+border-radius: 30px;
+
+
+  background-color: transparent;
+}
+.blockquote{
+
+  
+  text-align:center;
+  color:rgb(0, 4, 4);
+
+
+
+
+
+
+}
+.about-section{
+  color: #000000;
+  margin-left: 0;
+  margin-right: 0; 
+  flex-wrap: wrap;
+
+
+}
 
 .aboutbio {
   justify-content: center;
@@ -21,21 +51,20 @@
 }
 .Aboutcontainer {
   color: #000000;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0; 
+  flex-wrap: wrap;
+
+
 }
 
-.quote-card-view {
-  width: 400px;
-  justify-content: center;
-  display: flex;
-  position: relative;
-  left: auto;
-  right: auto;
-  /* border: 84px !important; */
-  text-align: center !important;
-  color: rgb(19, 12, 12) !important;
-  background-color: transparent !important;
+.aboutbio{
+  color: #000000;
+  background-color: wheat;
+  margin: 0;
+  border-radius: 30px;
 }
-
 .about-activity {
   list-style: none !important;
   text-align: left !important;
@@ -45,5 +74,27 @@
 @media (min-width: 415px) {
   .Abouthead {
     flex-direction: row;
+    margin-left: 0;
+    margin-right: 0; 
   }
 }
+
+
+
+@media (min-width: 415px) {
+.Aboutcontainer  {
+  flex-direction: row;
+  margin: 0.0px;
+}
+}
+
+
+
+
+@media (min-width: 415px) {
+  .aboutbio  {
+    flex-direction: row;
+    margin: 0px;
+  }
+  }
+  
