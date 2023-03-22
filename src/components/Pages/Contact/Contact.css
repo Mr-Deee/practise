@@ -1,6 +1,4 @@
-
-.Contactbox{
-
+.controw{
     font-family: 'Times New Roman', Times, serif;
     font-size: 44px;
     font-weight: bold;
@@ -9,6 +7,21 @@
     left: auto;
     right: auto;
     text-align: center;
+    justify-content: center;
+}
+.First{
+    
+    padding-top: 46px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    color: red;
+
+   
+    text-align: center;
+
 
 
 }

@@ -15,11 +15,11 @@ function Contact(){
 
 
 
-            <p className="Contactheader">Contact</p>
+        
 
 
-            <Row>
-                <Col>
+            <Row className="controw">
+                <Col className="contcol">
               
 
 
@@ -27,15 +27,15 @@ function Contact(){
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="sm">
-        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
+        <Box sx={{ bgcolor: '#cfe8fc', height: '10vh' }} classNamebox  />
 
         <Form>
-    <Form.Field>
-      <label>First Name</label>
+    <Form.Field className="First">
+    
       <input placeholder='First Name' />
     </Form.Field>
-    <Form.Field>
-      <label>Last Name</label>
+   
+     <Form.Field  className="First">
       <input placeholder='Last Name' />
     </Form.Field>
     <Form.Field>
