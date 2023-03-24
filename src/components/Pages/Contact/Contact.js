@@ -1,67 +1,55 @@
-import React from "react";
-import { Container,Row, Col } from "react-bootstrap";
+import React ,{ useState }from "react";
 import "./Contact.css";
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import { Button, Checkbox, Form } from 'semantic-ui-react'
 
+const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-function Contact(){
-    return(
+  const handleSubmit = (e) => {
+    e.Contact();
+    const mailtoLink = `mailto:merchantdaniel8@gmail.com?subject=${encodeURIComponent(
+      name + " - Contact Form"
+    )}&body=${encodeURIComponent(message + "\n\nFrom: " + email)}`;
+    window.location.href = mailtoLink;
 
+  };
 
-        <>
-        <Container className="Contactbox">
+  return (
+    <div className="contact-container">
+      <h2>Contact Us</h2>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="name">Name:</label>
+        <input
+        className="iname"
+          type="text"
+          id="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
 
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
 
+        <label htmlFor="message">Message:</label>
+        <textarea
+          id="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        ></textarea>
 
-        
+        <button type="submit" >Send Email</button>
+      </form>
+    </div>
+  );
+};
 
-
-            <Row className="controw">
-                <Col className="contcol">
-              
-
-
-
-    <React.Fragment>
-      <CssBaseline />
-      <Container maxWidth="sm">
-        <Box sx={{ bgcolor: '#cfe8fc', height: '10vh' }} classNamebox  />
-
-        <Form>
-    <Form.Field className="First">
-    
-      <input placeholder='First Name' />
-    </Form.Field>
-   
-     <Form.Field  className="First">
-      <input placeholder='Last Name' />
-    </Form.Field>
-    <Form.Field>
-      <Checkbox label='I agree to the Terms and Conditions' />
-    </Form.Field>
-    <Button type='submit'>Submit</Button>
-  </Form>
-      </Container>
-    </React.Fragment>
-
-
-                
-                </Col>
-            </Row>
-        
-        </Container>
-        
-        
-        
-        
-        </>
-    )
-
-
-
-
-}
-
-export  default Contact;
+export default Contact;
