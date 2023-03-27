@@ -15,10 +15,13 @@ const Contact = () => {
     emailjs.sendForm('service_o2ij7m8', 'template_7d6cpt7', form.current, 'N1l73HklBxqzJG95A')
       .then((result) => {
           console.log(result.text);
+      
       }, (error) => {
           console.log(error.text);
       });
- e.target.reset()
+      e.target.reset();
+
+
   };
  
 
@@ -30,6 +33,7 @@ const Contact = () => {
         <input
         className="iname"
           type="text"
+          name="u_name"
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -38,6 +42,7 @@ const Contact = () => {
             <label htmlFor="subject">Subject:</label>
         <input
         className="isubject"
+        name="u_subject"
           type="text"
           id="subject"
           value={subject}
@@ -47,6 +52,7 @@ const Contact = () => {
 
         <label htmlFor="email">Email:</label>
         <input
+        name="u_email"
           type="email"
           id="email"
           value={email}
@@ -56,6 +62,7 @@ const Contact = () => {
 
         <label htmlFor="message">Message:</label>
         <textarea
+        name="u_message"
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
