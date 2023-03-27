@@ -1,43 +1,26 @@
-.controw{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 44px;
-    font-weight: bold;
-    justify-content: center;
-    display: flex;
-    left: auto;
-    right: auto;
-    text-align: center;
-    justify-content: center;
-}
-.First{
-    
-    padding-top: 46px;
-
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    font-weight: bold;
-
-    color: red;
-
-   
-    text-align: center;
-
-
-
-}
-
-
-.Contactheader{
+.contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
   
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 44px;
-    font-weight: bold;
-    justify-content: center;
-    display: flex;
-    left: auto;
-    right: auto;
-    text-align: center;
+form {
+  padding-left: 30px;
+  padding-right: 30px;
 
+  padding-top: 30px;
+  border-radius: 30px;
+  border-radius: 30px;
+  height: 500px;
+  background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+  }
   
 
-}
+
+ 
+

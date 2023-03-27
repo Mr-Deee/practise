@@ -53,6 +53,7 @@
 
 @media(max-width: 800px) {
   .HelloText{
+    display: block;
     display: fixed;
     overflow: hidden;
     font-size: 20px;

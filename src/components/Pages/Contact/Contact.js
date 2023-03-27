@@ -1,24 +1,31 @@
-import React ,{ useState }from "react";
+import React ,{ useState,useRef }from "react";
+import emailjs from '@emailjs/browser';
 import "./Contact.css";
 
 const Contact = () => {
   const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const form = useRef()
 
-  const handleSubmit = (e) => {
-    e.Contact();
-    const mailtoLink = `mailto:merchantdaniel8@gmail.com?subject=${encodeURIComponent(
-      name + " - Contact Form"
-    )}&body=${encodeURIComponent(message + "\n\nFrom: " + email)}`;
-    window.location.href = mailtoLink;
+  const sendemail = (e) => {
+    e.preventDefault();
 
+    emailjs.sendForm('service_o2ij7m8', 'template_7d6cpt7', form.current, 'N1l73HklBxqzJG95A')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+ e.target.reset()
   };
+ 
 
   return (
     <div className="contact-container">
       <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
+      <form  ref={form}  onSubmit={sendemail}>
         <label htmlFor="name">Name:</label>
         <input
         className="iname"
@@ -26,6 +33,15 @@ const Contact = () => {
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
+        />
+            <label htmlFor="subject">Subject:</label>
+        <input
+        className="isubject"
+          type="text"
+          id="subject"
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
           required
         />
 
